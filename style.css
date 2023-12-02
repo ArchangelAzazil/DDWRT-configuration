@@ -40,6 +40,9 @@ li {
     text-align: center;
     line-height: 20px;
 }
+ul {
+    list-style-type: none;
+}
 
 /* Set the padding and margin of the footer */
 footer {
@@ -47,11 +50,41 @@ footer {
     padding: 5px;
     border-top: 1px solid #ccc;
     text-align: center;
-  }
+}
   
   /* Set the font size and margin of the footer paragraph */
-  footer p {
+footer p {
     font-size: 11px;
     margin: 0;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    /* Adjust font sizes for better readability on smaller screens */
+    body {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    p {
+      line-height: 18px;
+    }
+  
+    /* Increase spacing between sections and list items */
+    .container {
+      padding: 30px 20px;
+    }
+  
+    li {
+      margin-bottom: 15px;
+    }
+  
+    /* Resize images to fit the container */
+    .container img {
+      width: 75%;
+    }
   }
+  
   
