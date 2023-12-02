@@ -1,45 +1,41 @@
-body {
-    font-family: sans-serif;
+* {
     margin: 0;
-    padding: 20px;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .image-column {
-    width: 40%;
-    margin-right: 20px;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .text-column {
-    width: 60%;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  p {
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Set the default font family and size */
+body {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
+    background-color: aquamarine;
+    background-image: url(https://www.hotspotshield.com/imgs/vpn-offer/compared-bg.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}  
+/* Style the header */
+header {
+    position: relative; /* Enable relative positioning for the header */
+    padding: 20px;
+    border-radius: 5px;
+}
+/* Style the backlink */
+.back-link {
+    position: absolute; /* Make the backlink positioned absolutely */
+    top: 1; /* Position the backlink at the top of the header */
+    right: 0; /* Position the backlink at the right of the header */
+}
+h1 {
+    text-align: center;
+}
+.container img {
+    width: 50%; /* Ensure images fit their containers */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Treat images as block elements for better alignment */
+    margin: 0 auto; 
+}
+li {
+    text-align: center;
+}
   
-  ol {
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
   
