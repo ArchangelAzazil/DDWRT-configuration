@@ -14,11 +14,13 @@ body {
     background-size: cover;
 }  
 /* Style the header */
+
 header {
-    position: relative; /* Enable relative positioning for the header */
+    position: relative;
     padding: 20px;
     border-radius: 5px;
 }
+
 /* Style the backlink */
 .back-link {
     position: absolute; /* Make the backlink positioned absolutely */
@@ -36,6 +38,20 @@ h1 {
 }
 li {
     text-align: center;
+    line-height: 20px;
 }
+
+/* Set the padding and margin of the footer */
+footer {
+    background-color: #a4cef6;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+  }
   
+  /* Set the font size and margin of the footer paragraph */
+  footer p {
+    font-size: 11px;
+    margin: 0;
+  }
   
