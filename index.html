@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting up Hotspot Shield VPN on a DD-WRT router</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-column">
+            <img src="images/adminsetup.png" alt="Setup ddwrt admin">
+            <img src="images/version.png" alt="ddwrt version">
+            <img src="images/ipv6disable.png" alt="disable ipv6">
+            <img src="images/servicesVPN.png" alt="services VPN">
+            <img src="images/enableopenvpnclient.png" alt="enable openvpn client">
+            <img src="images/importconfig.png" alt="scroll down to import config">
+            <img src="images/hsssupportrouter.png" alt="click on router">
+            <img src="images/downloadconfig.png" alt="download config from HSS website">
+
+            <img src="images/uploadconfig.png" alt="upload the config from HSS">
+            <img src="images/usrnamepass.png" alt="enter username and password from when you downloaded the config">
+            <img src="images/saveapplysettings.png" alt="save and apply settings">
+            <img src="images/statusopenvpnsuccess.png" alt="verify connection from the status then OpenVPN">
+            <img src="images/ipleakstatus.png" alt="check connection status from ipleak.net">
+        </div>
+        <div class="text-column">
+            <h1>Setting up Hotspot Sheild VPN on DD-WRT Router</h1>
+            <h3>This tutorial will guide you through the process of setting up Hotspot Shield VPN on your DD-WRT router from admin setup to verifying and testing the VPN connection</h3>
+            <h5>Here are the steps to follow:</h5>
+            <ol>
+                <li>We are using the Netgear router R7000 with DD-WRT Firmware Version 3.0-r53714 (10/20/23)</li>
+                <li>Connect your router using a LAN cable to your ISP Modem</li>
+                <li>After setting up admin, login to the router web interface and click Setup > IPV6. Make sure this is disabled</li>
+                <li>Click on the Services tab, then choose VPN</li>
+                <li>Scroll down and enable OpenVPN Client</li>
+                <li>After you enable the OpenVPN client, you will find default values already filled out, you can ignore them for now, this will not matter later.</li>
+                <li>Scroll Down until you will see the 'Import Configuration' option</li>
+                <li>Login to your account from the Hotspot Shield website, On the home page, Click on Hotspot Shield VPN on the left below the Home Tab, scroll Down and click on router</li>
+                <li>Select your preferred virtual location. Open Notepad and copy the Username and Password that was generated. These are exclusive to your credentials only.</li>
+                <li>Click on the Download button to download your configuration in your downloads folder.</li>
+                <li>On the 'Import Configuration' page, click on 'Choose File'. Select the configuration file you have just downloaded. Click 'Open'</li>
+                <li>You will find that the default values have been changed to the required values for your router except the username and password field.</li>
+                <li>Enter the Username and Password you have saved a while ago on Notepad</li>
+                <li>Scroll down and click 'Save' then 'Apply Settings'. Please give the router a few seconds to update.</li>
+                <li>Click on the 'Status' tab then click on OpenVPN.</li>
+                <li>If you see the client status : Connected, then you have configured it correctly</li>
+                <li>Open another browser tab and go to ipleak.net, you should have the VPN virtual location IP displayed</li>
+
+
+
+
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
