@@ -1,90 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* Set the default font family and size */
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    background-color: aquamarine;
-    background-image: url(https://www.hotspotshield.com/imgs/vpn-offer/compared-bg.jpg);
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
-}  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-image: url(https://www.hotspotshield.com/imgs/vpn-offer/compared-bg.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*trying out some logo animation*/
+.logo {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+ 
 /* Style the header */
 
 header {
-    position: relative;
-    padding: 20px;
-    border-radius: 5px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(166, 238, 214), #a4cef6);
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1;
 }
 
 /* Style the backlink */
 .back-link {
-    position: absolute; /* Make the backlink positioned absolutely */
-    top: 1; /* Position the backlink at the top of the header */
-    right: 0; /* Position the backlink at the right of the header */
+  position: absolute; /* Make the backlink positioned absolutely */
+  top: 1; /* Position the backlink at the top of the header */
+  right: 0; /* Position the backlink at the right of the header */
 }
-h1 {
-    text-align: center;
+
+h1 {  
+  text-align: center;
 }
 .container img {
-    width: 50%; /* Ensure images fit their containers */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Treat images as block elements for better alignment */
-    margin: 0 auto; 
+  width: 50%; /* Ensure images fit their containers */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Treat images as block elements for better alignment */
+  margin: 0 auto; 
 }
 li {
-    text-align: center;
-    line-height: 20px;
+  text-align: center;
+  line-height: 20px;
 }
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* Set the padding and margin of the footer */
 footer {
-    background-color: #a4cef6;
-    padding: 5px;
-    border-top: 1px solid #ccc;
-    text-align: center;
+  background: linear-gradient(to bottom, rgb(166, 238, 214), #a4cef6);
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  text-align: center;
 }
   
   /* Set the font size and margin of the footer paragraph */
 footer p {
-    font-size: 11px;
-    margin: 0;
+  font-size: 10px;
+  margin: 0;
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-    /* Adjust font sizes for better readability on smaller screens */
-    body {
-      font-size: 14px;
-    }
+/* Adjust font sizes for better readability on smaller screens */
+  body {
+    font-size: 14px;
+  }
   
-    h1 {
-      font-size: 20px;
-    }
+  h1 {
+    font-size: 20px;
+  }
   
-    p {
-      line-height: 18px;
-    }
+  p {
+    line-height: 18px;
+  }
   
-    /* Increase spacing between sections and list items */
-    .container {
-      padding: 30px 20px;
-    }
+  /* Increase spacing between sections and list items */
+  .container {
+    padding: 30px 20px;
+  }
   
-    li {
-      margin-bottom: 15px;
-    }
+  li {
+    margin-bottom: 15px;
+  }
   
-    /* Resize images to fit the container */
-    .container img {
-      width: 75%;
-    }
+  /* Resize images to fit the container */
+  .container img {
+    width: 75%;
+  }
   }
   
   
