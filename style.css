@@ -13,11 +13,11 @@ body {
   background-size: cover;
 }
 
+
 /*trying out some logo animation*/
 .logo {
   animation: pulse 2s infinite ease-in-out;
 }
-
 @keyframes pulse {
   0% {
     transform: scale(1);
